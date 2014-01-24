@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       HKG Force member server
 // @namespace  http://xelio.eu.org
-// @version    2.0
+// @version    2.1
 // @description  Force using member server if logged in
 // @include    http://forum*.hkgolden.com/*
 // @include    http://search.hkgolden.com/*
@@ -48,7 +48,7 @@ replaceLink = function() {
   });
 }
 
-var memberServers = $j.map(shuffle([9, 10, 11]), function(n, i) {return 'forum' + n;});
+var memberServers = $j.map(shuffle([10, 11, 12, 13]), function(n, i) {return 'forum' + n;});
 
 var inMemberServer = false;
 var loggedIn = false;
